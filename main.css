@@ -245,14 +245,14 @@
 
   #p2 {
     position: absolute;
-  top: 21%;
+  top: 25%;
   left: 80%;
   transform: translate(-50%, -50%);
     border-radius: 5px;
     border: 2px solid #ffffff;
     padding: 30px; 
     width: 290px;
-    height: 210px;  
+    height: 240px;  
     background-color: white;
   } 
 
@@ -263,7 +263,7 @@
     font-weight: bold;
     color: rgb(117, 114, 114);
     display: inline-block;
-    height: 25px;
+    height: 27px;
     width: 85px;
     padding: 3px;
     border-radius: 5px;
@@ -271,14 +271,27 @@
   justify-content: center;
   align-items: center;
   }
-
+  
   .item1 {
+    position: absolute;
+    left: 15px; /* Відстань від лівого краю */
+    top: 95px; /* Відстань від верхнього краю */
+  }
+
+  .item2 {
     width: 60px;
-    left: 49px;
+    position: absolute;
+    left: 120px; /* Відстань від лівого краю */
+    top: 95px; /* Відстань від верхнього краю */
+  }
+
+  .itemcrossed {
+    position: absolute;
+    left: 15px; /* Відстань від лівого краю */
+    top: 245px; /* Відстань від верхнього краю */
   }
 
 
-  
   .amount {
     background-color: rgb(249, 138, 11);
     color:white;
@@ -296,6 +309,7 @@
   .header {
     margin-top: -25px; /* Додатковий відступ зверху */
     margin-bottom: 325px; /* Відступ знизу */
+    margin-left: -15px;
     text-align: left; /* Вирівнювання тексту по лівому краю */
     font-family: Arial;
     font-size: 25px;
@@ -305,8 +319,8 @@
   }
 
   .head-bought{
-    margin-top: -25px; /* Додатковий відступ зверху */
-    margin-bottom: 325px; /* Відступ знизу */
+    margin-top: -235px; /* Додатковий відступ зверху */
+    margin-left: -15px;
     text-align: left; /* Вирівнювання тексту по лівому краю */
     font-family: Arial;
     font-size: 25px;
@@ -321,11 +335,11 @@
   }
 
   .line2{
-    top: -310px;
+    top: -235px;
     width:354px;
   }
 
-  .line3{
-    top: -275px;
-    width:354px;
-  }
+.line3 {
+  top: -3px;
+  width: 354px;
+}
