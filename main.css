@@ -248,10 +248,84 @@
   top: 21%;
   left: 80%;
   transform: translate(-50%, -50%);
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid #ffffff;
     padding: 30px; 
     width: 290px;
     height: 210px;  
     background-color: white;
   } 
+
+  .product-item {
+    background-color: #e0dcdc;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(117, 114, 114);
+    display: inline-block;
+    height: 25px;
+    width: 85px;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .item1 {
+    width: 60px;
+    left: 49px;
+  }
+
+
+  
+  .amount {
+    background-color: rgb(249, 138, 11);
+    color:white;
+    border-radius: 10px;
+    font-family: Arial;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .header {
+    margin-top: -25px; /* Додатковий відступ зверху */
+    margin-bottom: 325px; /* Відступ знизу */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+    font-family: Arial;
+    font-size: 25px;
+    display: block; /* Зробити елемент блочним */
+    color: #000000;
+    
+  }
+
+  .head-bought{
+    margin-top: -25px; /* Додатковий відступ зверху */
+    margin-bottom: 325px; /* Відступ знизу */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+    font-family: Arial;
+    font-size: 25px;
+    display: block; /* Зробити елемент блочним */
+    color: #000000;
+   }
+  
+  .page2line{
+    width:354px;
+    top: -310px; /* Змінено властивість top */
+  left: -32px;
+  }
+
+  .line2{
+    top: -310px;
+    width:354px;
+  }
+
+  .line3{
+    top: -275px;
+    width:354px;
+  }
