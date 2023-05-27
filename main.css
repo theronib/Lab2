@@ -1,0 +1,257 @@
+.add-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color:rgb(20, 153, 20);
+  border-radius: 50%;
+  top: 50%; /* Розміщення по вертикалі на середину */
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 50;
+}
+
+.add-button1 {
+  left: 403px; 
+  top: 240px;
+}
+
+.add-button2 {
+  left: 403px;
+  top: 180px; 
+}
+
+.remove-button1{
+  left: 310px; 
+  top: 240px; 
+  background-color: rgb(199, 123, 123);
+}
+
+.remove-button2 {
+  left: 310px; 
+  top: 180px; 
+  background-color: red;
+}
+
+.not-bought {
+  color: rgb(117, 114, 114);
+  background-color: #f0f0f0;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 13px;
+  width: 100px;
+  height: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 2px solid #cecece;
+  position: absolute;
+  top: 17%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+
+.was-bought{
+  color: rgb(117, 114, 114);
+  background-color: #f0f0f0;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 13px;
+  width: 100px;
+  height: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 2px solid #cecece;
+  position: absolute;
+  top: 26%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.was-bought-1{
+  top:35%;
+
+}
+
+.cancel-action{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color:rgb(216, 8, 8);
+  font-family: Arial;
+  border-radius: 3px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+
+}
+
+.cancel-action1 {
+  top: 26%; 
+  left: 49.8%;
+}
+
+.cancel-action2 {
+  top: 35%; 
+  left: 49.8%;
+}
+
+
+.search input[type="text"] {
+    width: 680px;
+    height: 25px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+    position: absolute;
+   top: 8%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  }
+
+
+  .button button[type="submit"] {
+    color: white;
+    background-color: #208FDA;
+    font-weight: bold;
+    font-size: 15px;
+    width: 135px;
+    height: 49px;
+    padding: 17px;
+    text-align: center; 
+    line-height: 5px; 
+    border-radius: 3px;
+    border: 2px solid #2b7eb6;
+    position: absolute;
+    top: 8%;
+   left: 47%;
+   transform: translate(-50%, -50%);
+}
+
+.tomato {
+  left: 5px;
+  position: relative;
+  font-family: Arial;
+  font-size: 20px;
+  top: 62px; 
+  left: -2%;
+}
+
+.cookies, .potato {
+  left: 5px;
+  position: relative;
+  font-family: Arial;
+  font-size: 20px;
+  top: 75px;
+  left: -2%;
+
+}
+
+.mainline {
+  height: 2px;
+  width: 754px;
+  background-color: #e0dcdc;
+  margin: 1px 0;
+  position: relative; /* Встановлення позиції relative */
+  top: 45px; /* Змінено властивість top */
+  left: -32px;
+}
+
+.line {
+  height: 2px;
+  width: 754px;
+  background-color: #e0dcdc;
+  margin: 1px 0;
+  position: relative; /* Встановлення позиції relative */
+  top: 77px; /* Змінено властивість top */
+  left: -32px;
+}
+
+
+#counter {
+  border-radius: 10px;
+  border: 2px solid #e0dcdc;
+  background-color: #e0dcdc;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 15px; 
+  width: 7px;
+  height: 7px; 
+  display: flex; 
+  align-items: center; 
+  position: absolute; /* Встановлення позиції absolute */
+  top: 95px; /* Змінено властивість top */
+  left: 350px; /* Змінено властивість left */
+}
+
+
+#counter2 {
+  border-radius: 10px;
+  border: 2px solid #e0dcdc;
+  background-color: #e0dcdc;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 15px; 
+  width: 7px;
+  height: 7px; 
+  display: flex; 
+  align-items: center; 
+  position: absolute; /* Встановлення позиції absolute */
+  top: 157px; /* Змінено властивість top */
+  left: 350px; /* Змінено властивість left */
+}
+
+#counter3 {
+  border-radius: 10px;
+  border: 2px solid #e0dcdc;
+  background-color: #e0dcdc;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 15px; 
+  width: 7px;
+  height: 7px; 
+  display: flex; 
+  align-items: center; 
+  position: absolute; /* Встановлення позиції absolute */
+  top: 220px; /* Змінено властивість top */
+  left: 350px; /* Змінено властивість left */
+}
+
+
+  #p1 {
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    padding: 30px; 
+    width: 690px;
+    height: 205px;  
+    background-color: white;
+  }
+
+  #p2 {
+    position: absolute;
+  top: 21%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    padding: 30px; 
+    width: 290px;
+    height: 210px;  
+    background-color: white;
+  } 
