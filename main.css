@@ -345,8 +345,106 @@
   width: 354px;
 }
 
+.tooltip {
+  position: absolute;
+  top: -30px; /* відстань вище кнопки */
+  left: 50%;
+  width: 70px;
+  height: 30px;
+  transform: translateX(-50%);
+  background-color: purple;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0; /* початково прихований */
+  transition: opacity 0.3s ease;
+}
+
+.tooltip1 {
+  height: 50px;
+}
+
+.add-button:hover .tooltip {
+  opacity: 1; /* показуємо tooltip при наведенні на кнопку */
+}
+
+.cancel-action:hover .tooltip {
+  opacity: 1; /* показуємо tooltip при наведенні на кнопку */
+}
+
+
+.badge {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  border-radius: 5px;
+  border: 2px solid purple;
+  color: white;
+  font-family: Arial;
+  padding: 30px; 
+  position: absolute;
+  top: 93%;
+  display: flex;
+  align-items: flex-start;
+  margin-top: -10px;
+  transition: height 2s;
+  transition: top 1s;
+}
+.badgename{
+  font-size: 30px;
+  position: absolute;
+  top: -10px;
+  left: 18%;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+.name{
+  margin-top: 40px; 
+  font-size: 15px;
+
+}
+
+.badge:hover {
+  height: 200px;
+  background: blue;
+  border: 2px solid blue;
+  top: 80%;
+}
+
+@media print {
+
+  .badge::before {
+    content: "Created by: Yaroslav Baranivskyy"; /* Заміна тексту на ім'я того, хто робив роботу */
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-left: -10px;
+  }
+
+  .badge{
+    border-color: purple; 
+    background-color: white;
+    height: 60px;
+    top: 83%;
+
+  }
+
+  .badgename{
+    display: none;
+  }
+
+.name{
+  display: none;
+}
+
+}
+
+
+
 /* Код для екранів шириною менше 500px */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 530px) {
   #p1,
   #p2 {
     position: static;
@@ -462,9 +560,6 @@ left: 49%;
 .page1line, .page1line1, .page1line2{
   width:483px;
 }
-
-
-
 
 }
 
