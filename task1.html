@@ -6,139 +6,123 @@
 <head>
     <link rel="stylesheet" type="text/css" href="main.css" />
     <meta charset="UTF-8">
-    <body style="background-color:rgb(161, 160, 160);">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
+
+    <style>
+        body {
+            background-color: rgb(161, 160, 160);
+        }
+    </style>
+
 </head>
 
-<!-- Перша сторінка -->
+<body>
+    <section id="p1">
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Назва товару">
+      </div>
 
-    <body>
-        <div id="p1">
-            <div class = "search">
-            <input type="text" id="searchInput" placeholder="Назва товару">
-        </div>
+      <button class="button" type="submit">Додати</button>
 
-        <div class = "button">
-            <button type="submit">Додати</button>
-        </div>
-
-        <div class="mainline"></div> 
-
-        <div class = "tomato">
-            <s>Помідори</s>
-        </div>
-
-        <div class="line"></div> 
-
-        <div class = "cookies">
-            <p>Печиво</p>
-        </div>
-
-        <div class="line"></div> 
-
-        <div class = "potato">
-            <p>Картопля</p>
-        </div> 
-
-        <div id = "counter">
-            <p style = "color:#6a6565">2</p>
-        </div>
-
-        <div id = "counter2">
-            <p style = "color:#6a6565">2</p>
-        </div>
-
-        <div id = "counter3">
-            <p style = "color:#6a6565">1</p>
-        </div>
-
-        <div class="add-button add-button1">
-            <p>+</p>
-        </div>
-        <div class="add-button add-button2">
-            <p>+</p>
-        </div>
-
-        <div class="add-button remove-button1">
-            <p>-</p>
-        </div>
-
-        <div class="add-button remove-button2">
-            <p>-</p>
-        </div>
-
-        <div class = "not-bought">
-            <p>Не куплено</p>
-        </div>
-
-        <div class = "was-bought">
-            <p>Куплено</p>
-        </div>
-
-        <div class = "was-bought was-bought-1">
-            <p>Куплено</p>
-        </div>
-
-        <div class = "cancel-action cancel-action1">
-            <p>x</p>
-        </div>
-
-        <div class = "cancel-action cancel-action2">
-            <p>x</p>
-        </div>
-
-
-
-
-
-
-        </div>
-
-        <!-- Кінець першої сторінки -->
-
-
-
-          <div id="p2">
-            <h1>
-                <span class="header">Залишилося</span>
-              </h1>
-
-              <div class="line page2line"></div> 
-
-             <span class="product-item item1">
-                Печиво 
-                <span class="amount">2</span>
-            </span>
-
-            <span class="product-item item2">
-                Сир 
-                <span class="amount">1</span>
-            </span>
-
-            <div class="line line2"></div> 
-
-            <h1>
-                <span class="head-bought">Куплено</span>
-              </h1>
-
-              <div class="line line3"></div> 
-            
-
-             <span class="product-item itemcrossed">
-                <s>Помідори</s>
-                <span class="amount">2</span>
-            </span>  
-
-
-
-          </div>
-          
-
-        
-
-        
-
-    </body>
-
+      <div class="mainline page1line"></div>
+  
+      <article class="tomato">
+        <s>Помідори</s>
+      </article>
+  
+      <div class="line page1line1"></div>
+  
+      <article class="cookies">
+        <p>Печиво</p>
+      </article>
+  
+      <div class="line page1line2"></div>
+  
+      <article class="potato">
+        <p>Картопля</p>
+      </article>
+  
+      <div id="counter">
+        <p style="color:#6a6565">2</p>
+      </div>
+  
+      <div id="counter2">
+        <p style="color:#6a6565">2</p>
+      </div>
+  
+      <div id="counter3">
+        <p style="color:#6a6565">1</p>
+      </div>
+  
+      <button class="add-button add-button1">
+        <p>+</p>
+      </button>
+      
+      <button class="add-button add-button2">
+        <p>+</p>
+      </button>
+      
+      <button class="add-button remove-button1">
+        <p>-</p>
+      </button>
+      
+      <button class="add-button remove-button2">
+        <p>-</p>
+      </button>
+  
+      <article class="not-bought">
+        <p>Не куплено</p>
+      </article>
+  
+      <article class="was-bought">
+        <p>Куплено</p>
+      </article>
+  
+      <article class="was-bought was-bought-1">
+        <p>Куплено</p>
+      </article>
+  
+      <div class="cancel-action cancel-action1">
+        <p>x</p>
+      </div>
+  
+      <div class="cancel-action cancel-action2">
+        <p>x</p>
+      </div>
+    </section>
+  
+    <section id="p2">
+      <h1>
+        <span class="header">Залишилося</span>
+      </h1>
+  
+      <div class="line page2line"></div>
+  
+      <article class="product-item item1">
+        <p>Печиво</p>
+        <span class="amount">2</span>
+      </article>
+  
+      <article class="product-item item2">
+        <p>Сир</p>
+        <span class="amount">1</span>
+      </article>
+  
+      <div class="line line2"></div>
+  
+      <h1>
+        <span class="head-bought">Куплено</span>
+      </h1>
+  
+      <div class="line line3"></div>
+  
+      <article class="product-item itemcrossed">
+        <s>Помідори</s>
+        <span class="amount">2</span>
+      </article>
+    </section>
+  </body>
+  
 
 </html>

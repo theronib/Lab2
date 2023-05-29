@@ -125,24 +125,25 @@
   transform: translate(-50%, -50%);
   }
 
-
-  .button button[type="submit"] {
-    color: white;
-    background-color: #208FDA;
-    font-weight: bold;
-    font-size: 15px;
-    width: 135px;
-    height: 49px;
-    padding: 17px;
-    text-align: center; 
-    line-height: 5px; 
-    border-radius: 3px;
-    border: 2px solid #2b7eb6;
-    position: absolute;
-    top: 8%;
-   left: 47%;
-   transform: translate(-50%, -50%);
+.button{
+  color: white;
+  background-color: #208FDA;
+  font-weight: bold;
+  font-size: 15px;
+  width: 135px;
+  height: 49px;
+  padding: 17px;
+  text-align: center; 
+  line-height: 5px; 
+  border-radius: 3px;
+  border: 2px solid #2b7eb6;
+  position: absolute;
+  top: 8%;
+ left: 47%;
+ transform: translate(-50%, -50%);
 }
+
+
 
 .tomato {
   left: 5px;
@@ -343,3 +344,127 @@
   top: -3px;
   width: 354px;
 }
+
+/* Код для екранів шириною менше 500px */
+@media only screen and (max-width: 500px) {
+  #p1,
+  #p2 {
+    position: static;
+    width: auto;
+    height: 210px;
+    margin-bottom: 200px;
+  }
+  
+  #p2{
+    margin-left: 180px; /* Зсув праворуч */
+    height: 230px;  
+  }
+
+  .page2line{
+    width:300px;
+    top: -310px; /* Змінено властивість top */
+  left: -32px;
+  }
+
+  .line2{
+    top: -235px;
+    width:300px;
+  }
+
+.line3 {
+  top: -3px;
+  width: 300px;
+}
+
+.search input[type="text"] {
+  width: 430px;
+left: 49%;
+}
+
+
+.button{
+  width: 135px;
+ left: 82%;
+}
+
+.add-button{
+  transform: scale(0.8);
+}
+
+.add-button1 {
+  left: 280px; 
+  top: 230px;
+}
+
+.add-button2 {
+  left: 280px;
+  top: 165px; 
+}
+
+.remove-button1{
+  left: 185px; 
+  top: 230px; 
+}
+
+.remove-button2 {
+  left: 185px; 
+  top: 165px; 
+  
+}
+
+
+#counter {
+  left: 227px; /* Змінено властивість left */
+}
+
+
+#counter2 {
+  left: 227px; /* Змінено властивість left */
+}
+
+#counter3 {
+  left: 227px; /* Змінено властивість left */
+}
+
+.not-bought {
+
+  padding: 4px;
+    left: 85%;
+ 
+}
+
+.was-bought{
+ 
+  padding: 4px;
+  left: 79%;
+  
+}
+
+.was-bought-1{
+  top:35%;
+
+}
+
+.cancel-action{
+  left: 90.8%;
+  transform: scale(0.7);
+
+}
+
+.cancel-action1 {
+  top: 23.8%; 
+}
+
+.cancel-action2 {
+  top: 32.8%; 
+}
+
+.page1line, .page1line1, .page1line2{
+  width:483px;
+}
+
+
+
+
+}
+
