@@ -4,7 +4,7 @@
   height: 30px;
   background-color:rgb(20, 153, 20);
   border-radius: 50%;
-  top: 50%; /* Розміщення по вертикалі на середину */
+  top: 50%; 
   transform: translateY(-50%);
   display: flex;
   align-items: center;
@@ -13,6 +13,12 @@
   font-size: 18px;
   font-weight: 50;
 }
+
+.add-button0{
+  left: 403px; 
+  top: 118px;
+}
+
 
 .add-button1 {
   left: 403px; 
@@ -24,10 +30,16 @@
   top: 180px; 
 }
 
+.remove-button0{
+  left: 310px; 
+  top: 118px; 
+  background-color: red;
+}
+
 .remove-button1{
   left: 310px; 
   top: 240px; 
-  background-color: rgb(199, 123, 123);
+  background-color: red;
 }
 
 .remove-button2 {
@@ -169,8 +181,8 @@
   width: 754px;
   background-color: #e0dcdc;
   margin: 1px 0;
-  position: relative; /* Встановлення позиції relative */
-  top: 45px; /* Змінено властивість top */
+  position: relative; 
+  top: 45px; 
   left: -32px;
 }
 
@@ -179,13 +191,13 @@
   width: 754px;
   background-color: #e0dcdc;
   margin: 1px 0;
-  position: relative; /* Встановлення позиції relative */
-  top: 77px; /* Змінено властивість top */
+  position: relative; 
+  top: 77px;
   left: -32px;
 }
 
 
-#counter {
+#counter1 {
   border-radius: 10px;
   border: 2px solid #e0dcdc;
   background-color: #e0dcdc;
@@ -196,11 +208,10 @@
   height: 7px; 
   display: flex; 
   align-items: center; 
-  position: absolute; /* Встановлення позиції absolute */
-  top: 95px; /* Змінено властивість top */
-  left: 350px; /* Змінено властивість left */
+  position: absolute; 
+  top: 95px; 
+  left: 350px; 
 }
-
 
 #counter2 {
   border-radius: 10px;
@@ -213,9 +224,9 @@
   height: 7px; 
   display: flex; 
   align-items: center; 
-  position: absolute; /* Встановлення позиції absolute */
-  top: 157px; /* Змінено властивість top */
-  left: 350px; /* Змінено властивість left */
+  position: absolute; 
+  top: 157px; 
+  left: 350px; 
 }
 
 #counter3 {
@@ -229,10 +240,11 @@
   height: 7px; 
   display: flex; 
   align-items: center; 
-  position: absolute; /* Встановлення позиції absolute */
-  top: 220px; /* Змінено властивість top */
-  left: 350px; /* Змінено властивість left */
+  position: absolute; 
+  top: 220px; 
+  left: 350px; 
 }
+
 
 
   #p1 {
@@ -275,21 +287,21 @@
   
   .item1 {
     position: absolute;
-    left: 15px; /* Відстань від лівого краю */
-    top: 95px; /* Відстань від верхнього краю */
+    left: 15px; 
+    top: 95px;
   }
 
   .item2 {
     width: 60px;
     position: absolute;
-    left: 120px; /* Відстань від лівого краю */
-    top: 95px; /* Відстань від верхнього краю */
+    left: 120px; 
+    top: 95px; 
   }
 
   .itemcrossed {
     position: absolute;
-    left: 15px; /* Відстань від лівого краю */
-    top: 245px; /* Відстань від верхнього краю */
+    left: 15px; 
+    top: 245px; 
   }
 
 
@@ -308,30 +320,30 @@
   }
 
   .header {
-    margin-top: -25px; /* Додатковий відступ зверху */
-    margin-bottom: 325px; /* Відступ знизу */
+    margin-top: -25px; 
+    margin-bottom: 325px; 
     margin-left: -15px;
-    text-align: left; /* Вирівнювання тексту по лівому краю */
+    text-align: left; 
     font-family: Arial;
     font-size: 25px;
-    display: block; /* Зробити елемент блочним */
+    display: block; 
     color: #000000;
     
   }
 
   .head-bought{
-    margin-top: -235px; /* Додатковий відступ зверху */
+    margin-top: -235px; 
     margin-left: -15px;
-    text-align: left; /* Вирівнювання тексту по лівому краю */
+    text-align: left; 
     font-family: Arial;
     font-size: 25px;
-    display: block; /* Зробити елемент блочним */
+    display: block;
     color: #000000;
    }
   
   .page2line{
     width:354px;
-    top: -310px; /* Змінено властивість top */
+    top: -310px;
   left: -32px;
   }
 
@@ -347,7 +359,7 @@
 
 .tooltip {
   position: absolute;
-  top: -30px; /* відстань вище кнопки */
+  top: -30px; 
   left: 50%;
   width: 70px;
   height: 30px;
@@ -357,7 +369,7 @@
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
-  opacity: 0; /* початково прихований */
+  opacity: 0; 
   transition: opacity 0.3s ease;
 }
 
@@ -366,11 +378,11 @@
 }
 
 .add-button:hover .tooltip {
-  opacity: 1; /* показуємо tooltip при наведенні на кнопку */
+  opacity: 1;
 }
 
 .cancel-action:hover .tooltip {
-  opacity: 1; /* показуємо tooltip при наведенні на кнопку */
+  opacity: 1; 
 }
 
 
@@ -386,17 +398,16 @@
   position: absolute;
   top: 93%;
   display: flex;
+  
   align-items: flex-start;
   margin-top: -10px;
-  transition: height 2s;
-  transition: top 1s;
 }
 .badgename{
   font-size: 30px;
   position: absolute;
   top: -10px;
   left: 18%;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
 
 }
@@ -416,7 +427,7 @@
 @media print {
 
   .badge::before {
-    content: "Created by: Yaroslav Baranivskyy"; /* Заміна тексту на ім'я того, хто робив роботу */
+    content: "Created by: Yaroslav Baranivskyy"; 
     font-size: 20px;
     font-weight: bold;
     color: black;
@@ -454,13 +465,13 @@
   }
   
   #p2{
-    margin-left: 180px; /* Зсув праворуч */
+    margin-left: 180px; 
     height: 230px;  
   }
 
   .page2line{
     width:300px;
-    top: -310px; /* Змінено властивість top */
+    top: -310px; 
   left: -32px;
   }
 
@@ -489,6 +500,11 @@ left: 49%;
   transform: scale(0.8);
 }
 
+.add-button0 {
+  left: 280px; 
+  top: 103px;
+}
+
 .add-button1 {
   left: 280px; 
   top: 230px;
@@ -499,6 +515,11 @@ left: 49%;
   top: 165px; 
 }
 
+.remove-button0{
+  left: 185px; 
+  top: 103px; 
+}
+
 .remove-button1{
   left: 185px; 
   top: 230px; 
@@ -507,21 +528,20 @@ left: 49%;
 .remove-button2 {
   left: 185px; 
   top: 165px; 
-  
 }
 
 
-#counter {
-  left: 227px; /* Змінено властивість left */
+#counter1 {
+  left: 227px; 
 }
 
 
 #counter2 {
-  left: 227px; /* Змінено властивість left */
+  left: 227px;
 }
 
 #counter3 {
-  left: 227px; /* Змінено властивість left */
+  left: 227px; 
 }
 
 .not-bought {

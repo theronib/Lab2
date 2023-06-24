@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .counter {
+      color: #6a6565;
+    }
+  </style>
+</head>
+<body>
+  <div id="counter">
+    <p class="counter">2</p>
+  </div>
+
+  <button class="add-button" onclick="changeCounter(1)">
+    <p>+</p>
+    <span class="tooltip">Додати товар</span>
+  </button>
+
+  <button class="remove-button" onclick="changeCounter(-1)" disabled>
+    <p>-</p>
+    <span class="tooltip">Видалити товар</span>
+  </button>
+
+  <script>
+    const counterElement = document.querySelector("#counter p");
+    const addButton = document.querySelector(".add-button");
+    const removeButton = document.querySelector(".remove-button");
+
+    let counterValue = parseInt(counterElement.textContent);
+
+    function changeCounter(value) {
+      counterValue += value;
+      counterElement.textContent = counterValue.toString();
+
+      if (counterValue > 1) {
+        removeButton.disabled = false;
+      } else {
+        removeButton.disabled = true;
+      }
+    }
+  </script>
+</body>
+</html>

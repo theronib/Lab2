@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html>
 
 <head>
@@ -18,62 +17,77 @@
 </head>
 
 <body>
-    <section id="p1">
-      <div class="search">
-        <input type="text" id="searchInput" placeholder="Назва товару">
-      </div>
+  <section id="p1">
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Назва товару">
+    </div>
+    
+    <button class="button" type="button" onclick="addItem()">Додати</button>
+    
+    <div class="mainline page1line"></div>
 
-      <button class="button" type="submit">Додати</button>
-
-      <div class="mainline page1line"></div>
+    <article class="tomato">
+      <s onclick="startEditing(this)">Помідори</s>
+    </article>
+    
+    <hr class="line page1line1"></hr>
+    
+    <article class="cookies">
+      <p onclick="startEditing(this)">Печиво</p>
+    </article>
+    
+    <hr class="line page1line2"></hr>
+    
+    <article class="potato">
+      <p onclick="startEditing(this)">Сир</p>
+    </article>
+    
+    <div id="newField"></div>
+      
   
-      <article class="tomato">
-        <s>Помідори</s>
-      </article>
-  
-      <div class="line page1line1"></div>
-  
-      <article class="cookies">
-        <p>Печиво</p>
-      </article>
-  
-      <div class="line page1line2"></div>
-  
-      <article class="potato">
-        <p>Сир</p>
-      </article>
-  
-      <div id="counter">
+      <div id="counter1">
         <p style="color:#6a6565">2</p>
       </div>
-  
+      
       <div id="counter2">
         <p style="color:#6a6565">2</p>
       </div>
-  
+      
       <div id="counter3">
         <p style="color:#6a6565">1</p>
       </div>
-  
-      <button class="add-button add-button1">
+      
+      <button class="add-button add-button0" onclick="increaseQuantity(1)">
         <p>+</p>
         <span class="tooltip">Додати товар</span>
       </button>
       
-      <button class="add-button add-button2">
+      <button class="add-button add-button1" onclick="increaseQuantity(3)">
         <p>+</p>
         <span class="tooltip">Додати товар</span>
       </button>
       
-      <button class="add-button remove-button1">
+      <button class="add-button add-button2" onclick="increaseQuantity(2)">
+        <p>+</p>
+        <span class="tooltip">Додати товар</span>
+      </button>
+      
+      <button class="add-button remove-button0" onclick="decreaseQuantity(1)">
         <p>-</p>
         <span class="tooltip">Видалити товар</span>
       </button>
       
-      <button class="add-button remove-button2">
+      <button class="add-button remove-button1" onclick="decreaseQuantity(3)">
         <p>-</p>
         <span class="tooltip">Видалити товар</span>
       </button>
+      
+      <button class="add-button remove-button2" onclick="decreaseQuantity(2)">
+        <p>-</p>
+        <span class="tooltip">Видалити товар</span>
+      </button>
+      
+      
   
       <article class="not-bought">
         <p>Не куплено</p>
@@ -98,6 +112,8 @@
         <span class="tooltip tooltip1">Видалити товар зі списку</span>
       </div>
     </section>
+
+    
   
     <section id="p2">
       <h1>
@@ -134,6 +150,9 @@
   <p class = "badgename">Buy List</p>
   <sub class = "name">Created by: Yaroslav Baranivskyy</sub>
 </div>
+
+<script src="main1.js"></script>
+
 
   </body>
   
